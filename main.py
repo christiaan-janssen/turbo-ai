@@ -32,7 +32,7 @@ def main():
 
     print(response.text)
 
-    if verbose == True:
+    if verbose:
         print(f"User prompt: {user_prompt}")
         print(f"Prompt tokens: {response.usage_metadata.prompt_token_count}")
         print(f"Response tokens: {response.usage_metadata.candidates_token_count}")

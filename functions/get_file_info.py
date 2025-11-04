@@ -1,12 +1,9 @@
 import os
-import sys
 
 
 def get_files_info(working_directory: str, directory="."):
     work_dir_path = os.path.abspath(working_directory)
     target_path = os.path.abspath(os.path.join(work_dir_path, directory))
-
-    print(target_path == work_dir_path)
 
     if not target_path.startswith(work_dir_path):
         print(
